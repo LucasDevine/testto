@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+  --blue:#2980b9;
+  --black:#333;
+  --white:#fff;
+  --brown:#9e654d;
+  --light-color:#777;
+  --light-bg:#eee;
+  --box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+body {
+  background: linear-gradient(45deg, rgb(177, 161, 132), #f5ebde);
+  
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+
+html::-webkit-scrollbar{
+  width:10px;
+}
+
+html::-webkit-scrollbar-track{
+  background: #9e654d;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: var(--white);
+  border-radius: 50px;
+}
+
+.title{
+  font-size: 25px;
+  color:#9e654d;
+  margin-bottom: 15px;
+}
+
+
+.navbar {
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  font-size: large;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.dropdown .dropbtn {
+  font-size: large;
+  border: none;
+  outline: none;
+  color: black;
+  padding:14px 20px;
+  background-color: inherit;
+  text-align: center;
+  margin: 0; 
+}
+
+.navbar a:hover, .dropdown:hover, .dropbtn:hover {
+  box-shadow: inset 120px 0 0 0 #909394;
+  color: white;
+}
+
+.post button:hover {
+  box-shadow: inset 120px 0 0 0 black;
+  color: white;
+
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 90px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.btn{ 
+  margin-top: 10px;
+  display: inline-block;
+  padding:7px 20px;
+  border-radius: 5px;
+  background: black;
+  color:var(--white);
+  font-size: 17px;
+  box-shadow: var(--box-shadow);
+}
+
+.btn:hover {
+  background: #777;
+}
+
+.container{
+  padding:100px 9%;
+  background: linear-gradient(45deg, rgb(177, 161, 132), #f5ebde);
+  display: flex;
+}
+
+.container .profile{
+  flex:1 1 400px;
+  background: var(--white);
+  padding:20px 30px;
+  text-align: center;
+  position: sticky;
+  top:20px; left:0;
+  border-right:2px solid var(--black);
+  align-self: flex-start;
+}
+
+.container .profile img{
+  width: 350px;
+  height: 350px;
+  margin-bottom: 5px;
+}
+
+.container .profile h3{
+  color:var(--black);
+  font-size: 20px;
+}
+
+.container .profile h4{
+  color: black;
+  padding:5px 0;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.container .profil a{
+  color: black;
+  padding:5px 0;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.container .profil p{
+  color:black;
+  padding:5px 0;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.container .profile .share{
+  margin:10px 0;
+}
+
+.container .profile .share a {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  border-radius: 50%;
+  color: var(--brown);
+  background: var(--light-bg);
+}
+
+.container .profile .share a:hover{
+  background: var(--black);
+  color:var(--white);
+  box-shadow: var(--box-shadow);
+}
+
+.container .information{
+  flex:1 1 1000px;
+  background: var(--white);
+  padding:20px 30px;
+}
+
+.container .information .about p{
+  font-size: 17px;
+  line-height: 2;
+  padding-bottom: 10px;
+  color:var(--light-color);
+}
+
+.container .information .about .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container .information .about .box-container .box{
+  flex:1 1 250px;
+}
+
+.container .information .about .box-container .box h3{
+  font-size: 15px;
+  padding:10px 0;
+  color:var(--black);
+}
+
+.container .information .about .box-container .box h3 span{
+  color:var(--light-color);
+}
+
+.container .information .services{
+  padding:20px 0;
+}
+
+.container .information .services .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container .information .services .box-container .box{
+  flex:1 1 17px;
+  text-align: center;
+  border-radius: 5px;
+  padding:20px;
+  background: var(--light-bg);
+}
+
+.container .information .services .box-container .box img{
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.container .information .services .box-container .box h3{
+  font-size: 15px;
+  color:var(--light-color);
+}
+
+.container .information .skills .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container .information .skills .box-container .box{
+  flex:1 1 300px;
+}
+
+.container .information .skills .box-container .box .progress h3{
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  color:var(--black);
+  font-size: 15px;
+}
+
+.container .information .skills .box-container .box .progress h3 span{
+  color: black;
+}
+
+.container .information .skills .box-container .box .progress .bar{
+  overflow: hidden;
+  border-radius: 50px;
+  height: 10px;
+  background: var(--light-bg);
+}
+
+.container .information .skills .box-container .box .progress .bar span{
+  background: black;
+  height: 100%;
+  display: block;
+  border-radius: 50px;
+}
+
+.container .information .skills .box-container .box:first-child .progress:nth-child(1) .bar span{
+  width: 100%;
+}
+
+.container .information .skills .box-container .box:first-child .progress:nth-child(2) .bar span{
+  width: 90%;
+}
+
+.container .information .skills .box-container .box:first-child .progress:nth-child(3) .bar span{
+  width: 70%;
+}
+
+.container .information .skills .box-container .box:first-child .progress:nth-child(4) .bar span{
+  width: 40%;
+}
+
+.container .information .experience{
+  margin:20px 0;
+}
+
+.container .information .experience .box-container{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.container .information .experience .box-container .box{
+  padding:35px;
+  border-radius: 10px;
+  background: var(--light-bg);
+}
+
+.container .information .experience .box-container .box h6{
+  color:black;
+  font-style: italic;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.container .information .experience .box-container .box h3{
+  color:var(--black);
+  font-size: 17px;
+  padding:5px 0;
+}
+
+.container .information .experience .box-container .box h5{
+  color: rgb(111, 112, 111);
+  font-size: 13px;
+  padding:5px 0;
+}
+
+.container .information .experience .box-container .box p .ul{
+  color:var(--light-color);
+  font-size: 13px;
+  position: relative;
+  padding: 1rem;
+  text-align: right;
+  transform: translate(-50%, -50%);
+}
+.container .information .experience .box-container .ul{
+  list-style-type: none;
+  position: relative;
+  top: -17%;
+  left: 50%;
+  padding: 1rem;
+  text-align: right;
+  transform: translate(-50%, -50%);
+}
+
+.container .information .contact .box--container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container .information .contact .box--container .box{
+  flex: 1 1 200px;
+  display: flex;
+  align-self: flex-start;
+  gap:10px;
+}
+
+.container .information .contact .box--container .box i{
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  border-radius: 50%;
+  background: var(--brown);
+  color:var(--white);
+  text-align: center;
+}
+
+.container .information .contact .box-container .box h3{
+  font-size: 17px;
+  color:var(--black);
+  padding-bottom: 5px;
+}
+
+.container .information .contact .box-container .box .info p{
+  font-size: 14px;
+  color:black;
+  line-height: 2;
+}
+
+
+.post{
+  font-family: "Poppins",sans-serif;
+}
+.post p{
+  font-size: 14px;
+}
+.post button{
+  padding: 10px;
+  background-color: #9e654d;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+
+.post:not(:last-child){
+  margin-bottom: 50px;
+}
+.hide{
+  display: none;
+}
+
+
+
+
+@media (max-width:1200px) {
+  
+  .container{
+    flex-flow: column;
+    padding:20px;
+    justify-content: center;
+  }
+
+  .container .profile{
+    position: static;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    padding:20px;
+    border-right: none;
+    margin:0 auto;
+    margin-bottom: 15px;
+  }
+
+  .container .information{
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    padding:20px;
+  }
+
+
+}
+
+@media (max-width:450px){
+
+  .container .profile{
+    width: 100%;
+  }
+
+  .container .profile .btn{
+    width: 100%;
+  }
+
+  .container .information .about p{
+    font-size: 12px;
+  }
+
+
+  .container .information .experience .box--container .box p{
+    font-size: 12px;
+  }
+  .navbar
+  {
+    font-size: 12px;
+  }
+
+}
